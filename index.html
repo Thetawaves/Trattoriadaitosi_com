@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/ico" href="img/icons/738_small.png" />
+    <title>Dai Tosi | 738</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <img src="img/loading.gif" />
+    </div>
+    
+    <!-- Navbar Start -->
+    <img id="logo" src="img/logoredux.png" />
+    <div id="burger">
+        <div class="line" id="top"></div>
+        <div class="line" id="mid"></div>
+        <div class="line" id="bot"></div>
+    </div>
+    <nav>
+        <ul id="menu">
+            <li><a href="#info">When &amp; Where</a></li>
+            <!--<li><a href="#mostpopular">Our Menu</a></li>-->
+            <!--<li><a href="#meetus">The Family</a></li>-->
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <ul class="social">
+            <a href="mailto:tosetti738@gmail.com"><li id="mailto"></li></a>
+            <a href="https://www.facebook.com/Trattoria-dai-Tosi-160349303992275/?fref=ts" target="_blank"><li id="fb"></li></a>
+            <a href="https://www.tripadvisor.it/Restaurant_Review-g187870-d716421-Reviews-Trattoria_Dai_Tosi-Venice_Veneto.html" target="_blank"><li id="ta"></li></a>
+            <a href="tel:+390415237102"><li id="phone"></li></a>
+        </ul>
+    </nav>
+    <!-- Navbar End -->
+    
+    <!-- Cover Image Start -->
+    <div id="cover"></div>
+    <!-- Cover Image End -->
+    
+    <!-- Contact Break Line Start -->
+    <div id="contactbreak">
+        <hr class="divider"/>
+        <h4>Make a reservation at <a href="tel:+390415237102">(+39) 041 5237102</a> or at <a href="tel:+390415237016">(+39) 041 5237016</a> or send us an <a href="mailto:tosetti738@gmail.com">email</a>*</h4>
+        <p>* If you wish to make a reservation, phoning is recommended. If emailing is your only option then please book at least a week in advance and wait for a confirmation, thank you.</p>
+    </div>
+    <!-- Contact Break Line End -->
+    
+    <!-- Info Section Start -->
+    <section id="info">
+        <!-- Timetable Start -->
+        <div class="card" id="one">
+            <h2>The Restaurant Opens</h2>
+            <table id="timetable">
+                <tr>
+                    <th></th>
+                    <th>&nbsp;12 to 2 pm&nbsp;</th>
+                    <th>7 to 9.30 pm</th>
+                </tr>
+                <tr>
+                    <td>Mon</td>
+                    <td><div class="rest"></div></td>
+                    <td><div class="pizza"></div></td>
+                </tr>
+                <tr>
+                    <td>Tue</td>
+                    <td><div class="rest"></div></td>
+                    <td><div class="pizza"></div></td>
+                </tr>
+                <tr>
+                    <td>Wed</td>
+                    <td colspan="2">Sorry, we're closed</td>
+                </tr>
+                <tr>
+                    <td>Thu</td>
+                    <td><div class="both"></div></td>
+                    <td><div class="pizza"></div></td>
+                </tr>
+                <tr>
+                    <td>Fri</td>
+                    <td><div class="rest"></div></td>
+                    <td><div class="both"></div></td>
+                </tr>
+                <tr>
+                    <td>Sat</td>
+                    <td><div class="rest"></div></td>
+                    <td><div class="both"></div></td>
+                </tr>
+                <tr>
+                    <td>Sun</td>
+                    <td><div class="rest"></div></td>
+                    <td><div class="both"></div></td>
+                </tr>
+            </table>
+            <table id="legend">
+                <tr>
+                    <td><div class="rest colour"></div></td>
+                    <td class="data">Restaurant</td>
+                </tr>
+                <tr>
+                    <td><div class="pizza colour"></div></td>
+                    <td class="data">Pizza</td>
+                </tr>
+                <tr>
+                    <td><div class="both colour"></div></td>
+                    <td class="data">Both!</td>
+                </tr>
+            </table>
+        </div>
+        <!-- Timetable End -->
+        <!-- Google iframe Start -->
+        <div class="card" id="two">
+            <h2>Location</h2>
+            <iframe id="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1399.9562664445828!2d12.356586586713874!3d45.43126449785297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x93ffeba02d0a6c24!2sTrattoria+dai+Tosi!5e0!3m2!1sen!2sit!4v1456599190502" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <address>
+                <p>Calle Seco Marina, 738<br>Castello<br>Venice</p>
+            </address>
+        </div>
+        <!-- Google iframe End -->
+    </section>
+    <!-- Info Section End -->
+    
+    <!-- Food Menu Start -->
+    <!--<section id="mostpopular">
+        <h2>Most Popular</h2>
+        <hr class="divider"/>
+        <div id="cardholder">
+            <div class="cardrow">
+                <div class="card">
+                    <div class="fimg">
+                        <img src="img/dellacasa.png"/>
+                    </div>
+                    <div class ="fdescription">
+                        <h3>Pasta della Casa</h3>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus tempus ipsum, in finibus nisl ultrices eu.</p>
+                        <button><a href="menu.html">Full Menu</a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="fimg">
+                        <img src="img/Frittomix.png"/>
+                    </div>
+                    <div class ="fdescription">
+                        <h3>Frittura Mista</h3>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus tempus ipsum.</p>
+                        <button><a href="menu.html">Full Menu</a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="fimg">
+                        <img src="img/sarde.png"/>
+                    </div>
+                    <div class ="fdescription">
+                        <h3>Sarde in saor</h3>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <button><a href="menu.html">Full Menu</a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="fimg">
+                        <img src="img/pizza9.bmp"/>
+                    </div>
+                    <div class ="fdescription">
+                        <h3>Tiramisu'</h3>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus tempus ipsum, in finibus nisl ultrices eu.</p>
+                        <button><a href="menu.html">Full Menu</a></button>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="cardrow">
+                <div class="card">
+                    <div class="fimg">
+                        <img src="img/dellacasa.png"/>
+                    </div>
+                    <div class ="fdescription">
+                        <h3>Pasta della Casa</h3>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus tempus ipsum, in finibus nisl ultrices eu.</p>
+                        <button><a href="menu.html">Full Menu</a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="fimg">
+                        <img src="img/Frittomix.png"/>
+                    </div>
+                    <div class ="fdescription">
+                        <h3>Frittura Mista</h3>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus tempus ipsum.</p>
+                        <button><a href="menu.html">Full Menu</a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="fimg">
+                        <img src="img/sarde.png"/>
+                    </div>
+                    <div class ="fdescription">
+                        <h3>Sarde in saor</h3>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <button><a href="menu.html">Full Menu</a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="fimg">
+                        <img src="img/pizza9.bmp"/>
+                    </div>
+                    <div class ="fdescription">
+                        <h3>Tiramisu'</h3>
+                        <hr/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus tempus ipsum, in finibus nisl ultrices eu.</p>
+                        <button><a href="menu.html">Full Menu</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Food Menu End -->
+    
+    <!-- Meet the Family Start 
+    <section id="meetus">
+        <h2>Meet the Family</h2>
+        <hr class="divider"/>
+        <div class="profile">
+            <div class="profpicodd">
+                <img src="img/face01.png" />
+            </div>
+            <div class="podd">
+                <h3>Jackie</h3>
+                <hr class="hrodd" />
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mus lacinia eget platea mattis sagittis sociis praesent congue, cum pellentesque rhoncus inceptos metus luctus varius sodales nascetur dignissim auctor cursus elementum montes. Placerat consequat diam fames conubia mattis nullam nisl nulla, ut ac quisque dapibus egestas netus gravida imperdiet, maecenas non magnis ullamcorper justo faucibus lectus. Ultricies scelerisque nisl velit facilisi gravida eu congue ac, massa vestibulum vitae vel feugiat auctor a augue ligula, aliquam class leo egestas lacinia eget curabitur. Sociosqu felis pretium fringilla eleifend tincidunt aliquam gravida orci tellus, hendrerit quisque lacinia natoque praesent dictum et vivamus sem, integer morbi litora netus pharetra conubia non congue. Natoque posuere accumsan venenatis cubilia ac eget rhoncus laoreet, lacus integer mi fusce metus pellentesque at porttitor, ultricies sem gravida magnis hac nullam sagittis. Dictum cubilia eleifend pellentesque lacus tincidunt hac faucibus fermentum, etiam quam hendrerit curae at ut integer, habitant class dictumst primis porta penatibus dui.</p>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profpiceven">
+                <img src="img/face01.png" />
+            </div>
+            <div class="peven">
+                <h3>Paolo</h3>
+                <hr />
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mus lacinia eget platea mattis sagittis sociis praesent congue, cum pellentesque rhoncus inceptos metus luctus varius sodales nascetur dignissim auctor cursus elementum montes. Placerat consequat diam fames conubia mattis nullam nisl nulla, ut ac quisque dapibus egestas netus gravida imperdiet, maecenas non magnis ullamcorper justo faucibus lectus. Ultricies scelerisque nisl velit facilisi gravida eu congue ac, massa vestibulum vitae vel feugiat auctor a augue ligula, aliquam class leo egestas lacinia eget curabitur. Sociosqu felis pretium fringilla eleifend tincidunt aliquam gravida orci tellus, hendrerit quisque lacinia natoque praesent dictum et vivamus sem, integer morbi litora netus pharetra conubia non congue. Natoque posuere accumsan venenatis cubilia ac eget rhoncus laoreet, lacus integer mi fusce metus pellentesque at porttitor, ultricies sem gravida magnis hac nullam sagittis. Dictum cubilia eleifend pellentesque lacus tincidunt hac faucibus fermentum, etiam quam hendrerit curae at ut integer, habitant class dictumst primis porta penatibus dui.</p>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profpicodd">
+                <img src="img/face02.png" />
+            </div>
+            <div class="podd">
+                <h3>Logan</h3>
+                <hr class="hrodd" />
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mus lacinia eget platea mattis sagittis sociis praesent congue, cum pellentesque rhoncus inceptos metus luctus varius sodales nascetur dignissim auctor cursus elementum montes. Placerat consequat diam fames conubia mattis nullam nisl nulla, ut ac quisque dapibus egestas netus gravida imperdiet, maecenas non magnis ullamcorper justo faucibus lectus. Ultricies scelerisque nisl velit facilisi gravida eu congue ac, massa vestibulum vitae vel feugiat auctor a augue ligula, aliquam class leo egestas lacinia eget curabitur. Sociosqu felis pretium fringilla eleifend tincidunt aliquam gravida orci tellus, hendrerit quisque lacinia natoque praesent dictum et vivamus sem, integer morbi litora netus pharetra conubia non congue. Natoque posuere accumsan venenatis cubilia ac eget rhoncus laoreet, lacus integer mi fusce metus pellentesque at porttitor, ultricies sem gravida magnis hac nullam sagittis. Dictum cubilia eleifend pellentesque lacus tincidunt hac faucibus fermentum, etiam quam hendrerit curae at ut integer, habitant class dictumst primis porta penatibus dui.</p>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profpiceven">
+                <img src="img/face02.png" />
+            </div>
+            <div class="peven">
+                <h3>Alfredo</h3>
+                <hr />
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mus lacinia eget platea mattis sagittis sociis praesent congue, cum pellentesque rhoncus inceptos metus luctus varius sodales nascetur dignissim auctor cursus elementum montes. Placerat consequat diam fames conubia mattis nullam nisl nulla, ut ac quisque dapibus egestas netus gravida imperdiet, maecenas non magnis ullamcorper justo faucibus lectus. Ultricies scelerisque nisl velit facilisi gravida eu congue ac, massa vestibulum vitae vel feugiat auctor a augue ligula, aliquam class leo egestas lacinia eget curabitur. Sociosqu felis pretium fringilla eleifend tincidunt aliquam gravida orci tellus, hendrerit quisque lacinia natoque praesent dictum et vivamus sem, integer morbi litora netus pharetra conubia non congue. Natoque posuere accumsan venenatis cubilia ac eget rhoncus laoreet, lacus integer mi fusce metus pellentesque at porttitor, ultricies sem gravida magnis hac nullam sagittis. Dictum cubilia eleifend pellentesque lacus tincidunt hac faucibus fermentum, etiam quam hendrerit curae at ut integer, habitant class dictumst primis porta penatibus dui.</p>
+            </div>
+        </div>
+    </section>
+     Meet the Family End -->
+    
+    <!-- Social Start -->
+    <section id="contact">
+        <ul class="social">
+            <a href="mailto:tosetti738@gmail.com"><li id="mailto"></li></a>
+            <a href="https://www.facebook.com/Trattoria-dai-Tosi-160349303992275/?fref=ts" target="_blank"><li id="fb"></li></a>
+            <a href="https://www.tripadvisor.it/Restaurant_Review-g187870-d716421-Reviews-Trattoria_Dai_Tosi-Venice_Veneto.html" target="_blank"><li id="ta"></li></a>
+            <a href="tel:+390415237102"><li id="phone"></li></a>
+        </ul>
+        <div id="credits">
+            <a href="http://g-jessica.com" target="_blank"><p>Coded with &nbsp;</p>
+            <div>
+                <img src="img/icons/Brain.png" />
+            </div>
+            <p style="margin-right: 20px">&nbsp; by g-jessica.com</p></a>
+        </div>
+    </section>
+    <!-- Social End -->
+    
+    <!-- Credits -->
+    
+    <!-- Scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jscolor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

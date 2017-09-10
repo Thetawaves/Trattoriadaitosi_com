@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* Loader */
+
+#loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2000;
+    background-color: #325432;
+}
+
+#loader img {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+/* Nav Styling Start */
+
+#logo {
+    position: fixed;
+    height: 40px;
+    top: 5px;
+    left: 5px;
+    transition: all 0.5s;
+}
+
+#burger {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#burger .line {
+    height: 6px;
+    width: 40px;
+    position: absolute;
+    background-color: #325432;
+    border: 1px solid #F4EDD3;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+#burger #top {
+    top: 8px;
+    transform-origin: 0 0;
+}
+
+.moveTop {
+    transform: rotate(45deg)!important;
+}
+
+#burger #mid {
+    top: 21px;
+}
+
+#burger #bot {
+    top: 34px;
+    transform-origin: 0 100%;
+}
+
+.moveBot {
+    transform: rotate(-45deg)!important;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    background-color: #c0392b;
+    position: fixed;
+    transition: all 0.5s;
+    z-index: 100;
+    top: -100%;
+    left: 0;
+    z-index: 10;
+}
+
+nav #menu {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+nav #menu li {
+    padding: 25px 0;
+    font-size: 20px;
+    transition: all 0.5s;
+    list-style: none;
+}
+
+nav #menu li a {
+    text-decoration: none;
+    color: #F4EDD3;
+    text-transform: uppercase;
+}
+
+nav #menu li a:hover {
+    text-decoration: underline;
+}
+
+nav .social {
+    position: absolute;
+    width: 100%;
+    height: 4em;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    text-align: center;
+}
+
+nav .social li {
+    display: inline-block;
+    list-style: none;
+    height: 2em;
+    width: 2em;
+    
+}
+
+
+/* Nav Styling End */
+
+/* Nav onScroll Changes */
+
+.navsmall {
+    background-color: rgba(192, 57, 43, 0)!important;
+}
+
+/* Cover Image Start */
+#cover {
+    height: calc(100% - 100px);
+    background-image: url(img/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Cover Image End */
+
+/* Contact Break Line Start */
+
+#contactbreak {
+    height: 120px;
+    border-top: 0.5px solid #fff;
+    background-color: #fff;
+    text-align: center;
+}
+
+.divider {
+    border-style: solid;
+    height: 3px;
+    width: 15%;
+    color: #c0392b;
+    background-color: #c0392b;
+    border-color: #c0392b;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+#contactbreak p {
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+#contactbreak h4 {
+    margin-top: 15px;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+#contactbreak h4 a {
+    color: #000; 
+}
+
+#contactbreak h4 a:hover {
+    color: #c0392b!important;
+}
+
+/* Contact Break Line End */
+
+/* Info Section Start */
+#info {
+    background-image: url(img/restaurantblur.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
+    text-align: center;
+}
+
+#info .card {
+    width: 40%;
+    height: 450px;
+    margin-top: 100px;
+    color: #fff;
+    background-color: rgba(20,20,20,0.8);
+}
+
+/* Timetable Start */
+
+#info #one {
+    float:left;
+    margin-left: 5%;
+}
+
+#info h2 {
+    font-family: 'Dancing Script', cursive;
+    padding: 15px 0;
+}
+
+#timetable {
+    width: 70%;
+    max-width: 350px;
+    min-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rest {
+    background-color: #fa0;
+}
+
+.pizza {
+    background-color: #c0392b;
+}
+
+.both {
+    background-color: #e85400;
+}
+
+.rest, .pizza, .both {
+    margin: 0 10px;
+    height: 20px;
+}
+
+#legend {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#legend td {
+    height: 30px;
+}
+
+#legend .colour {
+    height: 20px;
+    width: 20px;
+    margin: auto;
+}
+
+#legend tr:hover {
+    background-color: #000;
+}
+
+/* Timetable End */
+
+#googlemap {
+    width: 70%;
+    height: 250px;
+    margin: 10px 0;
+}
+
+#info #two {
+    float:right;
+    margin-right: 5%;
+}
+/* Info Section End */
+
+/* Food Menu Start */
+#mostpopular h2, #meetus h2 {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    font-family: Dancing Script, cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+#mostpopular {
+    border-top: 0.5px solid #fff;
+    height: 430px;
+    width: 100%;
+}
+
+#cardholder {
+    margin-top: 30px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.cardrow {
+    width: 100%;
+    margin-top: 0px;
+    display: table;
+}
+
+.cardrow .card {
+    position: relative;
+    min-width: 300px;
+    height: 300px;
+    vertical-align: text-top;
+    background-color: #000;
+    display: table-cell;
+}
+
+.fimg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.fimg img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.fdescription {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(50, 84, 50, 0.8);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.fdescription hr {
+    border: 0.5px solid #fff;
+    height: 0;
+    width: 50%;
+    color: #fff;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.fdescription p {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.fdescription h3 {
+    font-family: Dancing Script, cursive;
+    margin-top: 20px;
+}
+
+.fdescription button {
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.fdescription button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.fdescription button:hover, .fdescription button:hover a {
+    background-color: #fff!important;
+    color: #325432!important;
+}
+
+/* Food Menu End */
+
+/* Meet the Family Start 
+#meetus {
+    border: 1px solid #fff;
+}
+
+.profile {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+#meetus .divider {
+    margin-bottom: 30px;
+}
+
+.profile:nth-child(odd) {
+    background-color: orange;
+}
+
+.profile:nth-child(even) {
+    background-color: firebrick;
+}
+
+.profpicodd {
+    height: 300px;
+    width: 300px;
+    left: -150px;
+    position: absolute;
+}
+
+.profpicodd img {
+    height: 100%;
+}
+
+.podd {
+    width: calc(100% - 190px);
+    left: 150px;
+    position: absolute;
+    padding: 20px;
+}
+
+.profile h3 {
+    font-family: 'Dancing Script', serif;
+}
+
+.profile hr {
+    border: none;
+    height: 1px;
+    color: #000;
+    background-color: #000;
+}
+
+.hrodd {
+    color: #fff!important;
+    background-color: #fff!important;
+}
+
+
+.peven {
+    width: calc(100% - 190px);
+    left: 0;
+    position: absolute;
+    padding: 20px;
+    text-align: right;
+    color: #fff;
+}
+
+.profpiceven {
+    height: 300px;
+    width: 300px;
+    right: -150px;
+    position: absolute;
+}
+
+.profpiceven img {
+    height: 100%;
+}
+
+ Meet the Family */
+
+/* Social Links */
+
+#contact .social {
+    text-align: center;
+    height: 4em;
+    margin-bottom: 0;
+    background-color: #325432;
+}
+
+.social li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 1em;
+    height: 2em;
+    width: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#mailto {
+    background-image: url(img/icons/mailun1.png);
+    background-size: contain;
+}
+
+#mailto:hover {
+    background-image: url(img/icons/mailhover.png);
+}
+
+#fb {
+    background-image: url(img/icons/facebookun1.png);
+    background-size: contain;
+}
+
+#fb:hover {
+    background-image: url(img/icons/fbhover.png);
+}
+
+#ta {
+    background-image: url(img/icons/tripun1.png);
+    background-size: contain;
+}
+
+#ta:hover {
+    background-image: url(img/icons/triphover.png);
+}
+
+#phone {
+    background-image: url(img/icons/phoneun1.png);
+    background-size: contain;
+}
+
+#phone:hover {
+    background-image: url(img/icons/phonehover.png);
+}
+
+/* Credits */
+
+#credits {
+    height: 22px;
+    width: 100%;
+    background-color: #EFECEC;
+    padding-bottom: 5px;
+    text-align: right;
+}
+
+#credits a {
+    color: #000;
+    text-decoration: none;
+}
+
+#credits div {
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    transform-origin: bottom;
+    transform: scale(1.5)
+}
+
+#credits div img {
+    height: 100%;
+}
+
+#credits p {
+    font-size: 12px;
+    line-height: 22px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+    
+    #contactbreak {
+        height: 200px;
+    }
+    
+    #info .card {
+        width: 90%;
+        margin-top: 50px;
+    }
+    
+    #info {
+        height: 1050px;
+    }
+    
+    #mailto {
+        background-image: url(img/icons/mailhover.png);
+    }
+
+    #fb {
+        background-image: url(img/icons/fbhover.png);
+    }
+
+    #ta {
+        background-image: url(img/icons/triphover.png);
+    }
+
+    #phone {
+        background-image: url(img/icons/phonehover.png);
+    }
+
+}
